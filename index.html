@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(rgba(0, 128, 0, 0.452), rgba(32, 128, 0, 0.822));
+    }
+
+    main {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      border-radius:10px;
+      overflow: hidden;
+    }
+
+    .calculator-display {
+      background-color: darkgreen;
+      height: 100px;
+    }
+
+    .calculator-keys {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    .calculator-button {
+      background-color: aqua;
+      padding: 25px;
+      font-size: 24px;
+      border: 0;
+    }
+    
+    .span-two {
+      grid-column: span 2;
+    }
+  </style>
+  <body>
+    <main>
+      <section class="container">
+        <div class="calculator-display"></div>
+        <div class="calculator-keys">
+          <button class="calculator-button span-two">AC</button
+          ><button class="calculator-button">DEL</button
+          ><button class="calculator-button">/</button
+          ><button class="calculator-button">1</button
+          ><button class="calculator-button">2</button
+          ><button class="calculator-button">3</button
+          ><button class="calculator-button">*</button
+          ><button class="calculator-button">4</button
+          ><button class="calculator-button">5</button
+          ><button class="calculator-button">6</button
+          ><button class="calculator-button">+</button
+          ><button class="calculator-button">7</button
+          ><button class="calculator-button">8</button
+          ><button class="calculator-button">9</button
+          ><button class="calculator-button">-</button
+          ><button class="calculator-button">.</button
+          ><button class="calculator-button">0</button
+          ><button class="calculator-button span-two">=</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
